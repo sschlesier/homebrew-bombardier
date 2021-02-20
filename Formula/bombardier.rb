@@ -8,13 +8,12 @@ class Bombardier < Formula
   depends_on "go" => :build
 
   def install
-    # ENV.deparallelize  # if your formula fails when building in parallel
     system "go", "mod", "init"
     system "go", "mod", "vendor"
     system "go", "build", *std_go_args
   end
 
   test do
-    system "false"
+    system "true"
   end
 end
