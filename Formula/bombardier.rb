@@ -14,6 +14,7 @@ class Bombardier < Formula
   end
 
   test do
-    system "true"
+    output = shell_output("#{bin}/bombardier -n 1 https://github.com/sschlesier/homebrew-bombardier")
+    assert_match "2xx - 1", output
   end
 end
