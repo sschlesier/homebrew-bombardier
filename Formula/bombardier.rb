@@ -13,6 +13,7 @@ class Bombardier < Formula
     system "go", "build", *std_go_args
   end
 
+  # need something to PR to test bottling actions
   test do
     output = shell_output("#{bin}/bombardier -n 1 https://github.com/sschlesier/homebrew-bombardier")
     assert_match "2xx - 1", output
