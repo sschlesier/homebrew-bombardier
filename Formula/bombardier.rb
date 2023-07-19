@@ -1,8 +1,8 @@
 class Bombardier < Formula
   desc "HTTP(S) benchmarking tool"
   homepage "https://github.com/codesenberg/bombardier"
-  url "https://github.com/codesenberg/bombardier/archive/v1.2.5.tar.gz"
-  sha256 "4efeac699d0c794ed22fe05b4de5c43fa41f98816682521421d538e076290ed6"
+  url "https://github.com/codesenberg/bombardier/archive/v1.2.6.tar.gz"
+  sha256 "d908c050132b3a33c3d292a6a3b47d088284a5969376f68f05d7409f51f01e41"
   license "MIT"
 
   bottle do
